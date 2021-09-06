@@ -57,11 +57,58 @@
         <div class="row row-cols-1 row-cols-lg-2">
             <div class="col-lg-8">
                 <pre class="line-numbers"><code class="language-javascript">
-                    //Call hello world
+                    //Get the values from the page or string 
+//aka controller function
+function getValue() {
 
-                        function HelloWorld(){
-                            alert("helloworld");
-                        }
+    document.getElementById("alert").classList.add("invisible");
+
+    let userString = document.getElementById("userString").value;
+    let revString = reverseString(userString);
+    displayString(revString);
+}
+
+
+
+
+//Reverse the string
+//aka logic function
+function reverseString(userString) {
+
+
+    let revString =[];
+    // bobby 
+    //nambe[0]="b";
+    //nambe[4]="y";
+    // last position in an array name.length -1
+
+    //reverse a string using a for loop
+
+    for (let index = userString.length - 1; index >= 0; index--) {
+        revString += userString[index];
+        
+    }
+        return revString;
+
+}
+
+
+
+
+
+//Display the string in reverse 
+//view function
+function displayString(revString) {
+
+    //wrrite the message to the page
+    document.getElementById("msg").innerHTML = `Your String reversed is: ${revString}`;
+    //turn on the alert box
+    document.getElementById("alert").classList.remove('invisible');
+
+
+}
+
+
                 </code></pre>
             </div>
             <div class="col-lg-4">
