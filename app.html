@@ -68,10 +68,10 @@
                     </h5>
                     <form class="row gx-3 gy-2">
                         <div class="col">
-                            <input id="userString " type="text" class="form-control" placeholder="Enter a String" aria-label="Enter a String"
+                            <input id="userString" type="text" class="form-control" placeholder="Enter a String" aria-label="Enter a String">
                         </div>
                         <div class="col-12">
-                            <button type="button" id="submit" class="btn btn-dark">Backpedal</button>
+                            <button type="button" id="btnsubmit" class="btn btn-dark">Backpedal</button>
                         </div>
                         <div class="alert alert-dark mt-5 invisible fade show" id="alert" role="alert">
                             <h4 class="alert-heading">
@@ -122,7 +122,7 @@
 
     </script>
     <script>
-        document.getElementById("submit").addEventListener("click",getvalue)
+        document.getElementById("btnsubmit").addEventListener("click", getValue);
     </script>
 </body>
 </html>

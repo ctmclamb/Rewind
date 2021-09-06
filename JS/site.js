@@ -2,7 +2,7 @@
 //aka controller function
 function getValue() {
 
-    doument.getElementById("alert").classlist.add("invisible");
+    document.getElementById("alert").classList.add("invisible");
 
     let userString = document.getElementById("userString").value;
     let revString = reverseString(userString);
@@ -29,7 +29,7 @@ function reverseString(userString) {
         revString += userString[index];
         
     }
-        return revString
+        return revString;
 
 }
 
@@ -39,12 +39,12 @@ function reverseString(userString) {
 
 //Display the string in reverse 
 //view function
-function displayString() {
+function displayString(revString) {
 
     //wrrite the message to the page
-    document.getElementById("msg").innerHTML = `Your String reversed is : ${reverseString}`;
+    document.getElementById("msg").innerHTML = `Your String reversed is: ${revString}`;
     //turn on the alert box
-    document.getElementById("alert").classList.remove('invisble')
+    document.getElementById("alert").classList.remove('invisible');
 
 
 }
